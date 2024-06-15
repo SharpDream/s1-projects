@@ -3,8 +3,7 @@ import random
 random_num = random.randint(1, 10)
 
 # instructions
-print("quit - exit\n"
-      "or guess the number between 1-10\n"
+print("Guess the number between 1-10\n"
       "you have 3 attempts\n")
 
 # attempt count variable
@@ -35,10 +34,6 @@ while attempts > 0 or attempts == 0:
             # return how many attempts he left
             print(f"you have {attempts + 1} attempts left")
 
-        # if the user want to quit the program
-        elif user_input == "quit":
-            # stops the program
-            break
 
     # if the "try" condition returns error cause of user's input the "except" will return and error message
     except:
